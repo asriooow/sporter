@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WebController@index');
+Route::get('about', 'WebController@about');
+Route::get('contact', 'WebController@contact');
 
 Auth::routes();
 
